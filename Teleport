@@ -3,8 +3,6 @@ local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
 local UserInputService = game:GetService("UserInputService")
 
--- Define the key you want to use (e.g., "E" key)
-
 -- Function to teleport player when key is pressed
 local function onKeyPress(input)
 	if input.UserInputType == Enum.UserInputType.Keyboard and input.KeyCode == teleportKey then
@@ -22,4 +20,3 @@ end
 
 -- Connect the key press function to UserInputService
 UserInputService.InputBegan:Connect(onKeyPress)
-      
